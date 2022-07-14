@@ -9,12 +9,12 @@ export function hexStringToJson(hexString) {
     return null;
   }
   try {
-    var hex = hexString.toString();
+    let hex = hexString.toString();
     if (hex.startsWith('0x')) {
       hex = hex.substring(2);
     }
-    var str = '';
-    for (var n = 0; n < hex.length; n += 2) {
+    let str = '';
+    for (let n = 0; n < hex.length; n += 2) {
       str += String.fromCharCode(parseInt(hex.substring(n, n + 2), 16));
     }
     return JSON.parse(str);

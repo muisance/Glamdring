@@ -2,7 +2,12 @@ import WalletConnect from '@walletconnect/web3-provider';
 import LoadingBackdrop from 'components/extra/LoadingBackdrop';
 import { ethers } from 'ethers';
 import useProfile from 'hooks/useProfile';
-import { createContext, useEffect, useRef, useState } from 'react';
+import {
+  createContext,
+  useEffect,
+  useRef,
+  useState
+} from 'react';
 import Web3Modal from 'web3modal';
 
 export const Web3Context = createContext();
